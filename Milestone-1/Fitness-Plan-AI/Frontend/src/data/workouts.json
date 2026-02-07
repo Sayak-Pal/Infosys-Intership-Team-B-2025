@@ -1,0 +1,92 @@
+{
+  "workoutTemplates": {
+    "cardio": {
+      "warmup": [
+        { "exercise": "Light Walking", "duration": "5 min" },
+        { "exercise": "Dynamic Stretching", "duration": "5 min" }
+      ],
+      "main": [
+        { "exercise": "Treadmill/Walking", "duration": "20 min", "intensity": "moderate" },
+        { "exercise": "Cycling", "duration": "15 min", "intensity": "moderate" },
+        { "exercise": "Elliptical", "duration": "5 min", "intensity": "low" }
+      ],
+      "cooldown": [
+        { "exercise": "Walking", "duration": "5 min" },
+        { "exercise": "Static Stretching", "duration": "5 min" }
+      ]
+    },
+    "strength": {
+      "warmup": [
+        { "exercise": "Light Cardio", "duration": "5 min" },
+        { "exercise": "Joint Mobility", "duration": "5 min" }
+      ],
+      "main": [
+        { "exercise": "Push-ups", "sets": 3, "reps": "8-12", "rest": "60s" },
+        { "exercise": "Squats", "sets": 3, "reps": "10-15", "rest": "60s" },
+        { "exercise": "Plank", "sets": 3, "duration": "30-60s", "rest": "45s" },
+        { "exercise": "Lunges", "sets": 3, "reps": "8-10 each leg", "rest": "60s" }
+      ],
+      "cooldown": [
+        { "exercise": "Light Walking", "duration": "5 min" },
+        { "exercise": "Muscle Stretching", "duration": "5 min" }
+      ]
+    },
+    "hiit": {
+      "warmup": [
+        { "exercise": "Light Jogging", "duration": "5 min" },
+        { "exercise": "Dynamic Warm-up", "duration": "5 min" }
+      ],
+      "main": [
+        { "exercise": "Burpees", "work": "30s", "rest": "30s", "rounds": 4 },
+        { "exercise": "Mountain Climbers", "work": "30s", "rest": "30s", "rounds": 4 },
+        { "exercise": "Jump Squats", "work": "30s", "rest": "30s", "rounds": 4 },
+        { "exercise": "High Knees", "work": "30s", "rest": "30s", "rounds": 4 }
+      ],
+      "cooldown": [
+        { "exercise": "Walking", "duration": "5 min" },
+        { "exercise": "Deep Stretching", "duration": "5 min" }
+      ]
+    },
+    "flexibility": {
+      "warmup": [
+        { "exercise": "Gentle Movement", "duration": "5 min" },
+        { "exercise": "Joint Circles", "duration": "5 min" }
+      ],
+      "main": [
+        { "exercise": "Yoga Flow", "duration": "20 min" },
+        { "exercise": "Static Stretches", "duration": "15 min" },
+        { "exercise": "Foam Rolling", "duration": "5 min" }
+      ],
+      "cooldown": [
+        { "exercise": "Meditation", "duration": "5 min" },
+        { "exercise": "Relaxation", "duration": "5 min" }
+      ]
+    }
+  },
+  "weeklySchedule": {
+    "beginner": {
+      "pattern": ["strength", "cardio", "rest", "strength", "flexibility", "cardio", "rest"]
+    },
+    "intermediate": {
+      "pattern": ["strength", "cardio", "strength", "hiit", "strength", "cardio", "rest"]
+    },
+    "advanced": {
+      "pattern": ["strength", "hiit", "strength", "cardio", "strength", "hiit", "flexibility"]
+    }
+  },
+  "modifications": {
+    "knee_pain": {
+      "replace": {
+        "Jump Squats": "Regular Squats",
+        "Burpees": "Modified Burpees (no jump)",
+        "Lunges": "Supported Lunges"
+      }
+    },
+    "back_pain": {
+      "replace": {
+        "Deadlifts": "Supported Rows",
+        "Overhead Press": "Seated Press"
+      }
+    }
+  }
+}
