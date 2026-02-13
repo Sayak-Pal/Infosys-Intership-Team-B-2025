@@ -102,9 +102,9 @@ JWT_SECRET=your_secret
 
 4. Start the API server:
 
-```bash
+``bash
 npm start
-```
+``
 
 ### 2) Frontend
 
