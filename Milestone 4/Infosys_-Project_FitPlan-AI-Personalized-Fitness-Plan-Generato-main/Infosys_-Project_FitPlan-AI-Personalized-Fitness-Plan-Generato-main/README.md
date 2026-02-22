@@ -1,97 +1,105 @@
-# FitPlan AI
+# 🌿 FitPlan AI + Voice Mental Health Assistant
 
-FitPlan AI is a rule-based fitness and diet planner that delivers an AI-like personalized experience. It generates 10-week workout and nutrition plans, tracks daily completion, and supports cuisine and health modifiers. The project includes a React frontend and a Node.js/Express backend with a MySQL database.
+<p align="center">
+  <a href="#"><img alt="React" src="https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=black"></a>
+  <a href="#"><img alt="Vite" src="https://img.shields.io/badge/Vite-⚡-646CFF?logo=vite&logoColor=white"></a>
+  <a href="#"><img alt="Node.js" src="https://img.shields.io/badge/Node.js-16%2B-339933?logo=node.js&logoColor=white"></a>
+  <a href="#"><img alt="Express" src="https://img.shields.io/badge/Express.js-000000?logo=express&logoColor=white"></a>
+  <a href="#"><img alt="MySQL" src="https://img.shields.io/badge/MySQL-8%2B-4479A1?logo=mysql&logoColor=white"></a>
+  <a href="#"><img alt="JWT" src="https://img.shields.io/badge/Auth-JWT-000000?logo=jsonwebtokens&logoColor=white"></a>
+  <a href="#"><img alt="Chart.js" src="https://img.shields.io/badge/Charts-Chart.js-FF6384?logo=chart.js&logoColor=white"></a>
+  <a href="#"><img alt="Web Speech API" src="https://img.shields.io/badge/Voice-Web%20Speech%20API-2B579A"></a>
+  <a href="https://github.com/Sayak-Pal/Infosys-Intership-Team-B-2025"><img alt="Repo" src="https://img.shields.io/badge/GitHub-Repo-181717?logo=github&logoColor=white"></a>
+</p>
 
-## Problem Statement
+A combined wellbeing prototype:
+- 💪 **FitPlan AI**: rule-based **10-week workout & nutrition plan generator** with tracking + dashboards  
+- 🧠 **AI Voice Mental Health Assistant (Frontend Prototype)**: voice-enabled supportive chat UI with grounding prompts and resource-linking concepts
 
-Many users struggle to build consistent fitness and nutrition routines because existing tools are either too complex, expensive, or require long onboarding. The goal is to deliver a simple system that generates personalized plans, tracks progress, and adapts to user preferences without heavy friction.
+> ⚠️ **Safety & Ethics Disclaimer**  
+> This project is **experimental** and **not** a replacement for professional mental health care or medical advice.  
+> If you are in immediate danger or crisis, contact **local emergency services** or a **crisis hotline** in your country.
 
-## Project Abstract
+---
 
-FitPlan AI provides a rule-based personalization engine that converts user inputs into structured 10-week workout and diet plans. The system combines a React-based UI, an Express API, and a MySQL database for persistence. Users can register, receive personalized plans, log daily activity and meals, and visualize progress using charts.
+## ✨ Features
 
-## Objectives
+### 💪 FitPlan AI (Fitness + Diet Planner)
+- 🗓️ Personalized **10-week** workout & diet plans
+- 📈 Weekly progression (intensity increases over time)
+- 🥗 Cuisine + goals + restriction/health modifiers
+- ✅ Daily workout & meal completion tracking
+- 📊 Dashboards with charts (progress visualization)
+- 🌗 Responsive UI with light/dark support
 
-- Generate personalized fitness and diet plans with weekly progression.
-- Support dietary preferences, restrictions, and health conditions.
-- Track workouts and meals with daily completion logs.
-- Provide progress visualization for motivation and feedback.
+### 🧠 AI Voice Mental Health Assistant (Voice UI Prototype)
+Located at: `Frontend/public/ai-assistant/`
+- 🎙️ Microphone voice input (browser-based)
+- 🔊 Speech output / TTS experiments (browser-based)
+- 😊 Basic sentiment-aware conversational flow (prototype level)
+- 🫁 Grounding / breathing prompts (UI-driven)
+- 🔗 Space for mental-health resources & safety guidance (prototype level)
 
-## Features
+---
 
-- Personalized 10-week workout and diet plans
-- Progressive training intensity by week
-- Diet plans tailored to goals, cuisines, and restrictions
-- Daily workout and meal completion tracking
-- Progress dashboards with charting
-- Responsive UI with light/dark theme support
+## 🧱 Tech Stack
 
-## Tech Stack
+### FitPlan AI
+- **Frontend:** React 18, Vite, React Router, Chart.js  
+- **Backend:** Node.js, Express  
+- **Database:** MySQL 8+ (MySQL2)  
+- **Auth:** JWT  
+- **Styling:** CSS (custom properties)
 
-- Frontend: React 18, Vite, React Router, Chart.js
-- Backend: Node.js, Express, MySQL2, JWT
-- Styling: CSS with custom properties
+### Voice Assistant (Prototype UI)
+- **Frontend:** HTML + CSS + JavaScript (served as static files)
+- **Voice APIs:** Browser Speech / Web APIs (depending on implementation)
 
-## Tools Used
+---
 
-- Visual Studio Code
-- Node.js and npm
-- Vite dev server
-- MySQL
-- Git
+## 🗂️ Project Structure
 
-## Skills Used
-
-- React component design and state management
-- REST API design with Express
-- Database schema design and SQL
-- Authentication and secure storage (JWT)
-- Data modeling for workouts and diets
-- UI theming and responsive styling
-
-## Monorepo Structure
-
-```
-Fitness-Plan-AI/
-├── Backend/                 # Node/Express API and DB integration
-│   ├── db.js                # MySQL connection pool
-│   ├── schema.sql           # DB schema
-│   ├── server.js            # Express app
-│   └── routes/              # API routes
-├── Frontend/                # React client
+```text
+.
+├── Backend/                            # Node/Express API + DB integration
+│   ├── db.js
+│   ├── schema.sql
+│   ├── server.js
+│   └── routes/
+├── Frontend/                           # React client
 │   ├── src/
-│   │   ├── components/      # Reusable UI components
-│   │   ├── context/         # React context and state
-│   │   ├── data/            # Rules and diet/workout data
-│   │   ├── pages/           # App pages
-│   │   ├── App.jsx          # App shell and routes
-│   │   └── main.jsx         # Entry point
-│   ├── index.html
+│   ├── public/
+│   │   └── ai-assistant/               # Voice mental health assistant (static prototype)
+│   │       ├── index.html
+│   │       ├── styles.css
+│   │       ├── widget.html
+│   │       ├── js/
+│   │       └── assets/
 │   └── package.json
-├── exercises/               # Exercise metadata JSON files
+├── exercises/                          # Exercise metadata JSON files
 └── README.md
 ```
 
-## Prerequisites
+---
 
+## 🚀 Quick Start (FitPlan AI)
+
+### ✅ Prerequisites
 - Node.js 16+ and npm
 - MySQL 8+ (local or remote)
 
-## Setup
-
 ### 1) Backend
+1. Create a database + tables using:
+   - `Backend/schema.sql`
 
-1. Create a database and tables using [Backend/schema.sql](Backend/schema.sql).
-2. In Backend, install dependencies:
-
+2. Install dependencies:
 ```bash
 cd Backend
 npm install
 ```
 
-3. Create a `.env` file in Backend:
-
-```
+3. Create `.env` inside `Backend/`:
+```env
 DB_HOST=127.0.0.1
 DB_USER=root
 DB_PASSWORD=your_password
@@ -101,79 +109,42 @@ JWT_SECRET=your_secret
 ```
 
 4. Start the API server:
-
-``bash
+```bash
 npm start
-``
+```
 
 ### 2) Frontend
-
-1. In Frontend, install dependencies:
-
 ```bash
 cd Frontend
 npm install
-```
-
-2. Start the Vite dev server:
-
-```bash
 npm run dev
 ```
 
-3. Open `http://localhost:5173` in your browser.
+Open:
+- 🌐 FitPlan UI: `http://localhost:5173`
+- 🔌 API: `http://localhost:5000`
 
-## Usage Notes
+---
 
-- The API listens on `http://localhost:5000` by default.
-- The frontend expects the backend to be running for auth, logs, and exercise lookups.
-- Exercise details are served from the [exercises](exercises/) directory.
+## 🎙️ Run the Voice Mental Health Assistant (Prototype)
 
-## Key Data Files
-
-- Diet templates: [Frontend/src/data/diets.json](Frontend/src/data/diets.json)
-- Workout templates: [Frontend/src/data/workouts.json](Frontend/src/data/workouts.json)
-- Rule engine: [Frontend/src/data/rules.json](Frontend/src/data/rules.json)
-
-## Scripts
-
-Backend (from Backend/):
-
-- `npm start` - Run the API server with nodemon
-
-Frontend (from Frontend/):
-
-- `npm run dev` - Start the dev server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-
-## License
-
-ISC
-
-## System Architecture
-
-```mermaid
-graph TD
-	A[User] -->|Browser| B[React Frontend]
-	B -->|REST API| C[Express Backend]
-	C --> D[(MySQL Database)]
-	C --> E[Exercises JSON Data]
-	B --> F[Charts and Progress UI]
+### Option A: While React dev server is running (recommended)
+```bash
+cd Frontend
+npm run dev
 ```
 
-## Application Flow
+Open:
+- `http://localhost:5173/ai-assistant/index.html`
 
-```mermaid
-flowchart TD
-	S[Start] --> R[User Registers or Logs In]
-	R --> I[Collect User Profile]
-	I --> P[Generate Workout and Diet Plans]
-	P --> D[Display Dashboard]
-	D --> W[Log Workout Completion]
-	D --> M[Log Meal Completion]
-	W --> U[Update Progress]
-	M --> U
-	U --> C[Show Charts and Insights]
-	C --> D
-```
+### Option B: Open as a static page
+Open:
+- `Frontend/public/ai-assistant/index.html`
+
+> Note: Some voice features may work better on `http://localhost` than `file://`.
+
+---
+
+## 📜 License
+- FitPlan AI: **ISC**
+- Voice Assistant UI: (repo-level license or add a note if different)
